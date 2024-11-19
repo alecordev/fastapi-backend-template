@@ -1,0 +1,16 @@
+<div id="page-spinner"
+    style="display: none; position: fixed; z-index: 9999; height: 2em; width: 2em; overflow: show; margin: auto; top: 0; left: 0; bottom: 0; right: 0;">
+    <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+    </div>
+</div>
+
+<script>
+    function showSpinner() {
+        document.getElementById('page-spinner').style.display = 'block';
+    }
+
+    function hideSpinner() {
+        document.getElementById('page-spinner').style.display = 'none';
+    }
+</script>

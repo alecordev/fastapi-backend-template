@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row m-3 text-center">
+        <h1 class="m-3">Record and Submit Audio</h1>
+
+        <div class="m-3">
+            <button class="btn btn-primary" id="record-button">Record Audio</button>
+            <button class="btn btn-primary" id="stop-button">Stop Recording</button>
+            <button class="btn btn-primary" id="submit-button" disabled>Submit Audio</button>
+        </div>
+        <div class="row">
+            <div class="col-12 m-4">
+                <!-- <label for="transcription">Transcription</label> -->
+                <textarea id="transcription" class="form-control" rows="10"
+                    placeholder="Transcription will show up here..."></textarea>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+{% include "fetch-response.js" %}
+{% include "audio/audio-processing.js" %}
+{% endblock %}

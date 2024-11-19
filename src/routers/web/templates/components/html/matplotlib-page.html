@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center m-4">Embedded Matplotlib Example</h1>
+            <img src="data:image/png;base64,{{ base64_encoded_chart }}" alt="Matplotlib Plot" class="img-fluid">
+        </div>
+    </div>
+</div>
+{% endblock %}

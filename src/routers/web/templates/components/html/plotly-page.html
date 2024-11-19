@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center m-4">Embedded Plotly Example</h1>
+            <div id="plotly-div">{{ chart_html | safe }}</div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block scripts %}
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+{% endblock %}

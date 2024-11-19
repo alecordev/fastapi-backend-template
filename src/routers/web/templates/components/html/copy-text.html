@@ -1,0 +1,22 @@
+<script>
+    function copyText() {
+        navigator.clipboard.writeText(document.getElementById("searchResults").textContent);
+        document.getElementById("copy-button").classList.remove("btn-outline-dark");
+        document.getElementById("copy-button").classList.add("btn-success");
+        document.getElementById("copy-icon").classList.remove("bi-copy");
+        document.getElementById("copy-icon").classList.add("bi-check2");
+
+        var copyButton = document.getElementById("copy-button");
+        var originalText = copyButton.textContent;
+        copyButton.textContent = "Copied!";
+
+        if (copyButton.textContent === "Copied!") {
+            copyButton.textContent = originalText;
+        } else {
+            copyButton.textContent = "Copied!";
+            setTimeout(function () {
+                copyButton.textContent = originalText;
+            }, 3000);
+        }
+    };
+</script>
