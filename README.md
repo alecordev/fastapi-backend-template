@@ -1,5 +1,9 @@
 # fastapi-backend-template
 
+A FastAPI template to quickly prototype API and Jinja2 front-end powered application!
+
+docker-compose ready!
+
 ## Run locally
 
 1. Install Python dependencies (`pip install -r requirements.txt`)

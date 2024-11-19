@@ -152,6 +152,10 @@ from routers.example2 import example2_router
 
 app.include_router(example2_router)
 
+from routers.web import web_router
+
+app.include_router(web_router)
+
 
 if __name__ == "__main__":
     import uvicorn
